@@ -1,0 +1,5 @@
+/*
+ * ARCHIVO DE CONFIGURACION DEL SERVIDOR, PRODUCCION Y DESARROLLO 
+ */
+
+process.env.PORT = process.env.PORT || 3000;
