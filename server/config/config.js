@@ -12,11 +12,11 @@ process.env.NODE_ENV = process.env.NODE_ENV || "dev";
 
 let urlDB;
 
-if (process.env.NODE_ENV === "dev") {
-  urlDB = "mongodb://localhost:27017/cafe";
-} else {
-  urlDB =
-    "mongodb+srv://nodejs-cafe:nodejs-cafe@cluster0-7xfrn.mongodb.net/test?retryWrites=true&w=majority";
-}
+// if (process.env.NODE_ENV === "dev") {
+//   urlDB = "mongodb://localhost:27017/cafe";
+// } else {
+urlDB =
+  "mongodb+srv://nodejs-cafe:nodejs-cafe@cluster0-7xfrn.mongodb.net/test?retryWrites=true&w=majority";
+// }
 
 process.env.URLDB = urlDB;
