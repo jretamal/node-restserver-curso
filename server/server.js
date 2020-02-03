@@ -36,4 +36,5 @@ mongoose.connect(
 
 app.listen(process.env.PORT, () => {
   console.log(`Escuchando puerto ${process.env.PORT}`);
+  console.log(`VARIABLE ENTORNO NODE_ENV ${process.env.NODE_ENV}`);
 });
