@@ -34,7 +34,7 @@ app.get("/usuario", verificaToken, (req, res) => {
         });
       }
 
-      Usuario.count(filtroEstadoActivo, (err, conteo) => {
+      Usuario.countDocuments(filtroEstadoActivo, (err, conteo) => {
         res.json({
           ok: true,
           usuarios,
